@@ -43,8 +43,9 @@ function numberValidation()
       
     }
     else{
-        document.getElementById("number1").innerHTML=""
-        return true
+        $('#number1').text("")
+        return true;
+        
     }
 }
 
@@ -53,12 +54,13 @@ function subjectValidation(){
 
         if(subject1.length=="")
         {
-            document.getElementById("subject1").innerHTML="Subject can't be null"
+            $('#subject1').text("Subject can't be null")
             return false;
         }
         else{
-            document.getElementById("subject1").innerHTML=""
+            $('#subject1').text("")
             return true;
+           
         }
 }
 
@@ -68,12 +70,14 @@ function messageValidation()
         
     if(message1.length=="")
     {
-        document.getElementById("message1").innerHTML="Message can't be null"
-        return false
+        $('#message1').text("Message can't be null")
+        return false;
+       
     }
     else{
-        document.getElementById("message1").innerHTML=""
-        return true
+        $('#message1').text("")
+        return true;
+       
     }
 }
 
@@ -83,18 +87,21 @@ function emailValidation()
         var email1=document.getElementById('email').value
         if(!email1.match(mailV))
         {
-        document.getElementById("email1").innerHTML="Invalid form"
-        return false;
+            $('#email1').text("Invalid format")
+            return false;
+        
         
         }
         else if(email1=="")
         {
-        document.getElementById("email1").innerHTML="Email is mandatory"
-        return false;
+            $('#email1').text("Email is mandatory")
+            return false;
+        
         }
         else{
-            document.getElementById("email1").innerHTML=""
-            return true
+            $('#email1').text("")
+            return true;
+    
         
         }
 }
