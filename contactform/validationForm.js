@@ -2,14 +2,14 @@ var nameVal=false;
 function nameValidation()
 {
     var re=/^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
-    var name=document.getElementById('name').value
+    var name=$('#name').val()
     if(!re.test(name)){
         $("#name1").text("Invalid Name");
         return false
     }
-    else if(name.length<4)
+    else if(name.length<3)
     {
-        $("#name1").text("Name should be atleast 4 characters");
+        $("#name1").text("Name should be atleast 3 characters");
         return false
     }
     else if(name=="")
@@ -25,7 +25,8 @@ function nameValidation()
 
 function numberValidation()
 {
-    var num1=document.getElementById("number").value
+    console.log("hey numbers")
+    var num1=$('#number').val()
     if(isNaN(num1))
     {
         $('#number1').text("Characters not allowed")
@@ -50,7 +51,7 @@ function numberValidation()
 }
 
 function subjectValidation(){
-    var subject1=document.getElementById("subject").value
+    var subject1=$('#subject').val()
 
         if(subject1.length=="")
         {
@@ -66,7 +67,7 @@ function subjectValidation(){
 
 function messageValidation()
 {
-    var message1=document.getElementById("message").value
+    var message1=$('#message').val()
         
     if(message1.length=="")
     {
@@ -84,7 +85,7 @@ function messageValidation()
 function emailValidation()
 {
     var mailV=/^[^]+@[^]+\.[a-z]{2,3}$/;
-        var email1=document.getElementById('email').value
+        var email1=$('#email').val()
         if(!email1.match(mailV))
         {
             $('#email1').text("Invalid format")
@@ -136,7 +137,7 @@ $(document).ready(function()
         if(nameValidation() && emailValidation() && numberValidation() && subjectValidation() && messageValidation())
         {
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbwTCHGrPr2wLbEMOZ-QYA2ih3BlPA-tFjfd9k_IWsABQesPzeigbck9Hs8hmCqNDwg6/exec",
+            url:"https://script.google.com/macros/s/AKfycbxUKYocqigVVu1o8UI4mJG2IIcpQi2uy0-c71wJcW_Lpyvmu6NpA81sVZnOCdeP7MlV/exec",
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
