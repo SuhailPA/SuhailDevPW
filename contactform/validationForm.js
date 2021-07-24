@@ -3,18 +3,19 @@ function nameValidation()
 {
     var re=/^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
     var name=$('#name').val()
-    if(!re.test(name)){
+    if(name=="")
+    {
+        $("#name1").text("Name can't be empty");
+        $('#name').focus()
+        return false
+    }
+    else if(!re.test(name)){
         $("#name1").text("Invalid Name");
         return false
     }
     else if(name.length<3)
     {
         $("#name1").text("Name should be atleast 3 characters");
-        return false
-    }
-    else if(name=="")
-    {
-        $("#name1").text("Name can't be empty");
         return false
     }
     else{
@@ -27,7 +28,12 @@ function numberValidation()
 {
     console.log("hey numbers")
     var num1=$('#number').val()
-    if(isNaN(num1))
+    if(num1=="")
+    {
+        $('#number1').text("Number can't be empty")
+        return false;
+    }
+    else if(isNaN(num1))
     {
         $('#number1').text("Characters not allowed")
         return false;
@@ -86,17 +92,17 @@ function emailValidation()
 {
     var mailV=/^[^]+@[^]+\.[a-z]{2,3}$/;
         var email1=$('#email').val()
-        if(!email1.match(mailV))
+        if(email1=="")
+        {
+            $('#email1').text("Email is mandatory")
+            return false;
+        
+        }
+        else if(!email1.match(mailV))
         {
             $('#email1').text("Invalid format")
             return false;
         
-        
-        }
-        else if(email1=="")
-        {
-            $('#email1').text("Email is mandatory")
-            return false;
         
         }
         else{
@@ -134,7 +140,7 @@ $(document).ready(function()
         e.preventDefault()
 
 
-        if(nameValidation() && emailValidation() && numberValidation() && subjectValidation() && messageValidation())
+        if(nameValidation() && emailValidation() && numberValidation()  && messageValidation())
         {
         $.ajax({
             url:"https://script.google.com/macros/s/AKfycbxUKYocqigVVu1o8UI4mJG2IIcpQi2uy0-c71wJcW_Lpyvmu6NpA81sVZnOCdeP7MlV/exec",
