@@ -140,7 +140,7 @@ $(document).ready(function()
         e.preventDefault()
 
 
-        if(nameValidation() && emailValidation() && numberValidation()  && messageValidation())
+        if(nameValidation() && emailValidation() && numberValidation() && subjectValidation() && messageValidation())
         {
         $.ajax({
             url:"https://script.google.com/macros/s/AKfycbxUKYocqigVVu1o8UI4mJG2IIcpQi2uy0-c71wJcW_Lpyvmu6NpA81sVZnOCdeP7MlV/exec",
