@@ -116,7 +116,7 @@
             <div class="row">
               <div class="col-md-12 col-lg-6">
                 <div class="row">
-                  <div class="col-sm-6 col-md-5">
+                  <div class="col-12 col-md-5">
                     <div class="about-img">
                       <img src="img/43133 SUHAIL (1).jpg" class="img-fluid rounded b-shadow-a" width="150px" height="150px" alt="">
                     </div>
@@ -166,7 +166,7 @@
                       About me
                     </h5>
                   </div>
-                  <p class="lead">
+                  <p class="lead justify-content-center" style="text-align: justify;">
                     Myself, I am Suhail P A, from Thrissur. I have completed my B.tech from MES College of Engineering & Technology
                     Kunnukara, specialised in Computer Science and Engineering. 
                   </p>
@@ -200,6 +200,28 @@
         </div>
       </div>
       <div class="row">
+
+        <div class="date-sec col-4 col-md-4 my-auto text-center" style="font-size: medium;">
+          <p>August 2016</p>
+          <p>July 2020</p>
+        </div>
+        <div class="col-8 col-md-8 mb-5">
+          <p class="Edu-mode"> Bachelor of Technology</p>
+          <p class="university">Kerala Technological University</p>
+          <p class="edu-desc">I have done my B.tech, specialized in Computer Science & Engineering from MES College of Engineering & Technology, Kunnukara under KTU.</p>
+        </div>
+
+        <div class="date-sec col-4 col-md-4 my-auto text-center" style="font-size: medium;">
+          <p>August 2014</p>
+          <p>March 2016</p>
+        </div>
+        <div class="col-8 col-md-8">
+          <p class="Edu-mode"> Higher Secondary School</p>
+          <p class="university">Kerala Higher Secondary Examination Board</p>
+          <p class="edu-desc">I have completed my Higher Secondary from MES Higher Secondary School, Vemballur under state syllabus, with CGPA of 7.2</p>
+          <hr>
+        </div>
+
         <div class="date-sec col-4 col-md-4 my-auto" style="font-size: medium;">
           <p>August 2013</p>
           <p>March 2014</p>
@@ -212,26 +234,6 @@
           <hr> 
         </div>
              
-        <div class="date-sec col-4 col-md-4 my-auto text-center" style="font-size: medium;">
-          <p>August 2014</p>
-          <p>March 2016</p>
-        </div>
-        <div class="col-8 col-md-8">
-          <p class="Edu-mode"> Higher Secondary School</p>
-          <p class="university">Kerala Higher Secondary Examination Board</p>
-          <p class="edu-desc">I have completed my Higher Secondary from MES Higher Secondary School, Vemballur under state syllabus, with CGPA of 7.2</p>
-          <hr>
-        </div>
-
-        <div class="date-sec col-4 col-md-4 my-auto text-center" style="font-size: medium;">
-          <p>August 2016</p>
-          <p>July 2020</p>
-        </div>
-        <div class="col-8 col-md-8 mb-5">
-          <p class="Edu-mode"> Bachelor of Technology</p>
-          <p class="university">Kerala Technological University</p>
-          <p class="edu-desc">I have done my B.tech, specialized in Computer Science & Engineering from MES College of Engineering & Technology, Kunnukara under KTU.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -568,7 +570,7 @@
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"  onkeydown="return (/[a-z+\s]/i.test(event.key))" />
+                            <input type="text" name="name" class="form-control" id="name" maxlength="20" placeholder="Your Name" data-rule="minlen:4"  onkeydown="return (/[a-z+\s]/i.test(event.key))" />
                             <div id="name1" class="validation" ></div>
                           </div>
                         </div>
@@ -580,7 +582,7 @@
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="tel" class="form-control" name="number" id="number" placeholder="Mobile Number" data-rule="minlen:10"   oninput="this.value = this.value.replace(/\D/g,'')"/>
+                            <input type="tel" class="form-control" name="number" maxlength="10" id="number" placeholder="Mobile Number" data-rule="minlen:10"   oninput="this.value = this.value.replace(/\D/g,'')"/>
                             <div id="number1" class="validation"></div>
                           </div>
                       </div>
@@ -596,7 +598,7 @@
                             <div id="message1" class="validation"></div>
                           </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-center ">
                           <button  type="submit" class="button button-a button-big button-rouded">Send Message</button>
                         </div>
                       </div>
@@ -608,23 +610,21 @@
                     <h5 class="title-left">
                       Get in Touch
                     </h5>
-                    <p class="pt-3">
+                    <p class="pt-3 lead">
                       If you have any questions, please feel free to drop me a line. If you don't get an answer immediately. 
                       I might be just travelling through the middle of nowhere. I will get back to you as soon as I can. <br>
                       That's a promise!
                     </p>
                   </div>
                   <div class="more-info">
-                    <p class="lead">
                     
-                    </p>
                     <ul class="list-ico">
                       <li><span class="ion-ios-location"></span>Carnival Infopark, Kakkanad</li>
-                      <li><span class="ion-ios-telephone"></span>+91-9526288263</li>
-                      <li><span class="ion-email"></span> Suhailabbas23@gmail.com</li>
+                      <li><a href="tel:+91-9526288263"><span class="ion-ios-telephone"></span>+91-9526288263</a></li>
+                      <li><a href="mailto:suhailabbas23@gmail.com" target="_blank"><span class="ion-email"></span> Suhailabbas23@gmail.com</a></li>
                     </ul>
                   </div>
-                  <div class="socials">
+                  <div class="socials text-center mt-5">
                     <ul>
                       <li><a href="https://www.facebook.com/suhail.abbas.3511/" target="_blank"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
                       <li><a href="https://instagram.com/suhail_p_a?utm_medium=copy_link" target="_blank"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>

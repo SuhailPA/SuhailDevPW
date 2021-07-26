@@ -14,6 +14,11 @@ body {
   color: #4e4e4e;
 }
 
+.lead{
+  text-align: justify;
+  font-size: medium;
+}
+
 h1,
 h2,
 h3,
@@ -681,6 +686,7 @@ a:hover {
 }
 
 .about-mf .about-img {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -741,6 +747,8 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
+  font-size: medium;
+  text-align: justify;
 }
 
 /*======================================
