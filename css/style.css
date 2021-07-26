@@ -751,6 +751,7 @@ a:hover {
   text-align: justify;
 }
 
+
 /*======================================
 //--//-->   COUNTER
 ======================================*/
@@ -808,6 +809,7 @@ a:hover {
 .work-content .w-more {
   color: #4e4e4e;
   font-size: .8rem;
+  text-align: justify;
 }
 
 .work-content .w-more .w-ctegory {
@@ -1239,6 +1241,7 @@ footer .credits a {
   }
 
   .testimonial-box .description {
+    text-align: justify;
     padding: 0 5rem;
   }
 
